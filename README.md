@@ -1,13 +1,13 @@
 # Assemble Package
 
-## Set up:
+## Set up
 
 After creating your new repo from the github template plan out what your package(s) will be named and modify the contents of the `packages` directory to reflect this planning. Use the examples in the packages directory as reference, although you could rename both the directory and the name in the `package.json` file of any of the examples and work off of them.
 
 - Install Dependencies: `yarn`
 - Initialize Yarn (you will need to import the yarn/workspaces plugin): `init:workspaces`
 
-## Core concepts:
+## Core concepts
 
 This is a monorepo and therefore introduces a few additional steps to getting all set up.
 
@@ -19,7 +19,7 @@ There are also mandatory concepts & dependencies that assist in a smooth develop
 
 ---
 
-## Initialization:
+## Initialization
 
 1. Removing the sample packages in the `packages` directory.
 2. Make a new directory with your package folder name.
@@ -30,11 +30,11 @@ There are also mandatory concepts & dependencies that assist in a smooth develop
 7. If you don't want to bundle the dependency in the package make sure to use the `--peer` flag when adding to the workspace!
 8. If you ran the example apps before all this setup make sure to remove any .next / .parcel-cache and dist directories! If you don't clean up you will have problems moving forward.
 
-## Publishing:
+## Publishing
 
 Note: in order to leverage the monorepo approach in a npm publishing workflow you need to have a paid NPM account - this unlocks private packages (sadly a mandatory in this context).
 
-## Example:
+## Example
 
 Currently there are 2 example apps you can use to view your work. Simply import your package into either or both. Both examples have been configured to support web3 technologies out of the box with the below dependencies:
 
@@ -58,10 +58,10 @@ Currently there are 2 example apps you can use to view your work. Simply import 
 5. Lets publish a package with changesets: [https://www.loom.com/share/c60acbc744f745abacf7aa1af0b467ab](https://www.loom.com/share/c60acbc744f745abacf7aa1af0b467ab)
 6. And finally lets consume the package in another project, make some changes to it and publish again - and then update in the consumer app: [https://www.loom.com/share/92ef615552c9401d81f3b5f21702afe4](https://www.loom.com/share/92ef615552c9401d81f3b5f21702afe4)
 
-### The sample repo:
+### The sample repo
 
 [https://github.com/dblodorn/dains-really-fly-package](https://github.com/dblodorn/dains-really-fly-package)
 
-### Further Reading:
+### Further Reading
 
 - [Monorepo Guide: Getting Started](https://monorepo.guide/getting-started)
