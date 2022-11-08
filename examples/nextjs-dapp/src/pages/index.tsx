@@ -1,14 +1,10 @@
-import { TestComponent } from 'react-package'
-import { useAccount } from 'wagmi'
-import { DynamicComponent } from '../components/example/DynamicComponent'
+import { FutureTapeButton } from '@public-assembly/future-tape'
 
 function Page() {
-  const { address } = useAccount()
-
   return (
     <section className="flex flex-col gap-4">
-      <TestComponent />
-      {address ? <DynamicComponent address={address} /> : null}
+      <FutureTapeButton href="tag/present+material" />
+      <FutureTapeButton href="tag/present+material" color="pink" />
     </section>
   )
 }

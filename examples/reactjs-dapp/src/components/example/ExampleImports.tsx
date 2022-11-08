@@ -1,16 +1,14 @@
-import { TestComponent } from 'react-package'
-import { WebThreeComponent } from 'react-web3-package'
-import { ExampleHook } from './ExampleHook'
-import { useAccount } from 'wagmi'
+import { FutureTapeButton } from '@public-assembly/future-tape'
 
 export function ExampleImports() {
-  const { address } = useAccount()
-
   return (
     <section className="flex flex-col gap-4">
-      <TestComponent text=" Imported into a vanilla react parcel app" />
-      <WebThreeComponent />
-      {address && <ExampleHook address={address} />}
+      <FutureTapeButton href="present+material" color="#F2F" />
+      <FutureTapeButton
+        href="present+material"
+        className="p-4 border border-gray-200 border-solid"
+      />
+      <FutureTapeButton href="present+material" text="Future Tape" />
     </section>
   )
 }
