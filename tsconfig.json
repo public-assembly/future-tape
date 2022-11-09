@@ -5,7 +5,7 @@
     "esModuleInterop": true,
     "incremental": true,
     "isolatedModules": true,
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "lib": ["es2019", "es2017", "dom"],
     "module": "commonjs",
     "moduleResolution": "node",
@@ -21,5 +21,5 @@
     "target": "es2021"
   },
   "exclude": ["node_modules", "**/dist/**", "**/node_modules/**"],
-  "include": ["packages/**/*", "declarations.d.ts"]
+  "include": ["packages/**/*"]
 }
