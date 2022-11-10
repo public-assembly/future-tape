@@ -1,5 +1,3 @@
-import React from 'React'
-
 export type FutureTapeButtonProps = {
   /**
    * Class name to override styles on the link
