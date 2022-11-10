@@ -1,3 +1,5 @@
+import React from 'React'
+
 export type FutureTapeButtonProps = {
   /**
    * Class name to override styles on the link
@@ -29,9 +31,12 @@ export type FutureTapeButtonProps = {
 
 const FUTURE_TAPE_ADDRESS = 'https://futuretape.xyz/tag/'
 
-export function FutureTapeButton(props: FutureTapeButtonProps) {
-  const { className, text = 'Listen on Future Tape ↗︎', href, color = 'black' } = props
-
+export const FutureTapeButton: React.FC<FutureTapeButtonProps> = ({
+  text = 'Listen on Future Tape ↗︎',
+  color = 'black',
+  className,
+  href,
+}) => {
   return (
     <a
       className={
